@@ -67,7 +67,11 @@ streamlit run app.py
 
 ## Screenshots
 
-_Coming soon_
+### Pipeline Analysis
+![Pipeline Analysis](screenshots/pipeline_analysis.png)
+
+### Account Health
+![Account Health](screenshots/account_health.png)
 
 ## Author
 
