@@ -1,11 +1,11 @@
 # 📊 Salesforce Data AI Pipeline
 
-AI-powered CRM analytics that connects to a live Salesforce org and generates business insights using Google Gemini. 100% free.
+AI-powered CRM analytics that connects to a live Salesforce org and generates business insights using Groq AI. 100% free.
 
 ## Architecture
 
 ```
-Salesforce Org → OAuth Authentication → SOQL Queries → Pandas Processing → Gemini AI Analysis → Streamlit Dashboard
+Salesforce Org → OAuth Authentication → SOQL Queries → Pandas Processing → Groq AI Analysis → Streamlit Dashboard
 ```
 
 ## Features
@@ -24,7 +24,7 @@ Salesforce Org → OAuth Authentication → SOQL Queries → Pandas Processing �
 |-----------|-----------|------|
 | Data Source | Live Salesforce Org (REST API + OAuth) | Free |
 | Processing | Pandas + SOQL | Free |
-| AI Engine | LangChain + Google Gemini Flash | Free |
+| AI Engine | LangChain + Groq | Free |
 | Dashboard | Streamlit | Free |
 | **Total** | | **$0** |
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 # Configure
 cp .env.example .env
-# Edit .env with your Salesforce credentials + Gemini API key
+# Edit .env with your Salesforce credentials + Groq API key
 
 # Launch
 streamlit run app.py
@@ -61,7 +61,7 @@ streamlit run app.py
 |---|---|
 | SOQL data extraction | Data Cloud data ingestion |
 | Pandas processing | Data Cloud harmonization |
-| Gemini AI analysis | Agentforce AI reasoning |
+| Groq AI analysis | Agentforce AI reasoning |
 | Streamlit dashboard | CRM Analytics activation |
 | Executive summary | Agentforce agent response |
 

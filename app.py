@@ -39,12 +39,12 @@ with st.sidebar:
     **How it works:**
     1. Connect to your Salesforce org via REST API
     2. Pull Accounts, Opportunities, Cases via SOQL
-    3. AI analyzes your data using Google Gemini
+    3. AI analyzes your data using Groq
     4. Get actionable insights instantly
 
     **Tech Stack:**
     - simple-salesforce (REST API)
-    - LangChain + Gemini (AI)
+    - LangChain + Groq (AI)
     - Pandas (data processing)
     - Streamlit (dashboard)
 
@@ -114,6 +114,6 @@ else:
     ### What this app does:
     1. **Connects** to your live Salesforce org
     2. **Pulls** Accounts, Opportunities, and Cases data
-    3. **Analyzes** your data with AI (Google Gemini)
+    3. **Analyzes** your data with AI (Groq)
     4. **Generates** pipeline risk scores, account health, and case trend insights
     """)
