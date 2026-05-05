@@ -1,8 +1,8 @@
 """
 AI Analyzer — LLM-powered CRM insights
-Uses Google Gemini (free) to analyze Salesforce data
+Uses Groq to analyze Salesforce data
 """
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 from config import Config
 import json
@@ -12,13 +12,13 @@ class AIAnalyzer:
     """Generates AI insights from Salesforce CRM data."""
 
     def __init__(self):
-        self.llm = ChatGoogleGenerativeAI(
-            model=Config.LLM_MODEL,
-            google_api_key=Config.GOOGLE_API_KEY,
+        self.llm = ChatGroq(
+            model_name=Config.LLM_MODEL,
+            groq_api_key=Config.GROQ_API_KEY,
             temperature=0.2,
-            max_output_tokens=2000
+            max_tokens=2000
         )
-        print("  AI Analyzer ready (Gemini free tier)")
+        print("  AI Analyzer ready (Groq)")
 
     def analyze_pipeline(self, opp_df) -> str:
         """Analyze opportunity pipeline for risks and recommendations."""
